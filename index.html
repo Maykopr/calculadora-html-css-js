@@ -13,34 +13,33 @@
 <body>
     <div class="bodyCalculator">
         <section class="tela">
-            <div class="previousValue">212</div>
-            <div class="currentValue">700</div>
+            <p class="previousValue"></p>
+            <p class="currentValue"></p>
         </section>
         <section class="botoes">
             <div id="functions">
-                <button class="functions">C</button>
-                <button class="functions">CE</button>
+                <button class="functions" onclick="clean()">C</button>
+                <button class="functions" onclick="backspace()"><img src="img/backspace.png" alt=""></button>
             </div>
             <div id="nunbers">
-                <button class="numbers">7</button>
-                <button class="numbers">8</button>
-                <button class="numbers">9</button>
-                <button class="numbers">4</button>
-                <button class="numbers">5</button>
-                <button class="numbers">6</button>
-                <button class="numbers">1</button>
-                <button class="numbers">2</button>
-                <button class="numbers">3</button>
-                <button class="numbers">0</button>
-                <button class="numbers">.</button>
-                <button class="operators">=</button>
+                <button class="numbers" onclick="insert(7)">7</button>
+                <button class="numbers" onclick="insert(8)">8</button>
+                <button class="numbers" onclick="insert(9)">9</button>
+                <button class="numbers" onclick="insert(4)">4</button>
+                <button class="numbers" onclick="insert(5)">5</button>
+                <button class="numbers" onclick="insert(6)">6</button>
+                <button class="numbers" onclick="insert(1)">1</button>
+                <button class="numbers" onclick="insert(2)">2</button>
+                <button class="numbers" onclick="insert(3)">3</button>
+                <button class="numbers" onclick="insert(0)">0</button>
+                <button class="numbers" onclick="insert('.')">.</button>
+                <button id="equal" onclick="result('=')">=</button>
             </div>
             <div id="operators">
-                <button class="operators">%</button>
-                <button class="operators">+</button>
-                <button class="operators">-</button>
-                <button class="operators">*</button>
-                <button class="operators">/</button>
+                <button class="operators" onclick="insert('+')">+</button>
+                <button class="operators" onclick="insert('-')">-</button>
+                <button class="operators" onclick="insert('*')">*</button>
+                <button class="operators" onclick="insert('/')">/</button>
 
             </div>
         </section>
