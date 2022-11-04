@@ -4,6 +4,14 @@
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    --bg-color: ##3291B6;
+    --primary-color: #007185;
+    --secondary-color: #003B3F;
+    --color-font1: white;
+    --color-font2: black;
+    --btn-color1: rgb(233, 233, 233);
+    --btn-color2: rgb(180, 180, 180);
+    --btn-color-hover: rgb(102, 102, 102);
 }
 
 body {
@@ -11,30 +19,31 @@ body {
     background-color: rgb(50, 145, 182);
     justify-content: center;
     align-content: center;
-    height: 800px;
 
 
 }
 
 .bodyCalculator {
-    width: 400px;
-    min-height: 400px;
-    background-color: rgb(6, 119, 122);
-    align-self: center;
-    padding: 30px;
+    margin: 20px;
+    width: 350px;
+    background-color: var(--primary-color);
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 15px 15px rgb(0, 59, 63);
+    box-shadow: 15px 15px var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
 .tela {
-    width: 100%;
+    width: 99%;
     min-height: 80px;
-    background-color: whitesmoke;
+    background-color: var(--color-font1);
     text-align: right;
     border-radius: 8px;
     margin-bottom: 10px;
-    box-shadow: 2px 2px 10px rgb(0, 59, 63);
 }
 
 .currentValue {
@@ -51,64 +60,46 @@ body {
     word-wrap: break-word;
 }
 
-.botoes {
-    display: grid;
-    grid-template-areas:
-        'functions  operators'
-        'numbers operators';
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.functions,
-.numbers,
-.operators,
-#equal {
-    height: 60px;
-    width: 70px;
-    margin: 5px;
+.btn {
+    height: 50px;
+    width: 22%;
+    margin: 3px;
     border-radius: 7px;
     border: none;
     font-size: 20px;
     margin-bottom: 10px;
-    cursor: pointer;
-    box-shadow: 2px 2px 10px rgb(0, 59, 63);
-    ;
+    background-color: var(--btn-color1);
 }
 
-#equal {
-    background-color: rgb(197, 197, 197);
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--btn-color-hover);
+}
+
+.equal {
+    background-color: var(--btn-color2);
+    width: 47.5%;
 }
 
 .functions {
     width: 112px;
-    background-color: rgb(170, 170, 170);
+    background-color: var(--btn-color2);
+    width: 35%;
 }
 
-#functions {
-    grid-area: functions;
-    width: 255px;
-}
-
-#numbers {
-    grid-area: numbers;
-}
-
-#operators {
-    grid-area: operators;
-
-}
 
 .operators {
-    background-color: rgb(197, 197, 197);
-    height: 21%;
-}
-
-.functions:hover,
-.numbers:hover,
-.operators:hover,
-#equal:hover {
-    background-color: rgba(1, 187, 125, 0.507);
+    background-color: var(--btn-color2);
 }
 
 img {
-    width: 20px;
+    width: 25px;
 }
