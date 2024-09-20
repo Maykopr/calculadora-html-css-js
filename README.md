@@ -6,7 +6,7 @@ Apesar de simples, possui as seguintes implementações:
 - Não permite a repetição errada dos operadores e da pontuação.
 - Possui também função try/catch para capturar possíveis erros.
 - Impõe limite de valor digitado.
-- Substitui o último operador digita sem necessidade de apagar.
+- Substitui o último operador digitado sem necessidade de apagar.
 
 Outro projeto mais robusto será implementado assim que possível.
 
