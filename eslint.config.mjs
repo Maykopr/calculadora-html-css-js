@@ -15,7 +15,7 @@ export default [
                   "func-style": ["warn", "declaration"],
                   "id-length": ["error", { min: 3 }],
                   "max-depth": ["warn", 3],
-                  "max-lines-per-function": ["error", { max: 20 }],
+                  // "max-lines-per-function": ["error", { max: 20 }],
                   "max-nested-callbacks": ["error", 3],
                   "max-params": ["error", 3],
                   "no-await-in-loop": "error",

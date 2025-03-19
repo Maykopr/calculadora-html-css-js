@@ -1,7 +1,7 @@
 {
-  "name": "projeto-calculadora",
-  "version": "1.0.0",
-  "description": "Esta é uma calculadora simples para treino de HTML e CSS que usa como lógica a função eval() do JS.\r Apesar de simples, possui as seguintes implementações:",
+  "name": "calculadora-html-css-js",
+  "version": "1.1.0",
+  "description": "Calculadora simples em HTML, CSS e javaScript",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
