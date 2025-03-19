@@ -11,35 +11,39 @@
 </head>
 
 <body>
-	<div class="bodyCalculator">
-		<section class="tela">
-			<p class="previousValue"></p>
-			<p class="currentValue"></p>
-		</section>
-		<section>
-			<div class="buttons" id="functions">
-				<button class="functions btn" onclick="clean()">AC</button>
-				<button class="functions btn" onclick="backspace()"><img src="img/backspace.png"
-						alt=""></button>
-				<button class="operators btn" onclick="filterOperator('/')">/</button>
-				<button class="numbers btn" onclick="insert(7)">7</button>
-				<button class="numbers btn" onclick="insert(8)">8</button>
-				<button class="numbers btn" onclick="insert(9)">9</button>
-				<button class="operators btn" onclick="filterOperator('*')">x</button>
-				<button class="numbers btn" onclick="insert(4)">4</button>
-				<button class="numbers btn" onclick="insert(5)">5</button>
-				<button class="numbers btn" onclick="insert(6)">6</button>
-				<button class="operators btn" onclick="filterOperator('-')">-</button>
-				<button class="numbers btn" onclick="insert(1)">1</button>
-				<button class="numbers btn" onclick="insert(2)">2</button>
-				<button class="numbers btn" onclick="insert(3)">3</button>
-				<button class="operators btn" onclick="filterOperator('+')">+</button>
-				<button class="numbers btn" onclick="insert(0)">0</button>
-				<button class="numbers btn" onclick="filterDot('.')">.</button>
-				<button class="equal btn" id="equal" onclick="result('=')">=</button>
+	<main class="calculator">
+		<div class="screen">
+			<div class="screen__previous">
+				<p id="screen-previous"></p>
+
 			</div>
-		</section>
-	</div>
+			<div class="screen__current">
+				<p id="screen-current">0</p>
+
+			</div>
+		</div>
+		<div class="button-pad" id="functions">
+			<button id="clean" class="button-pad__btn button-pad__btn--functions">AC</button>
+			<button id="backspace" class="button-pad__btn button-pad__btn--functions">⌫</button>
+			<button id="percent" class="button-pad__btn button-pad__btn--secondary">%</button>
+			<button id="7" class="button-pad__btn button-pad__btn--number">7</button>
+			<button id="8" class="button-pad__btn button-pad__btn--number">8</button>
+			<button id="9" class="button-pad__btn button-pad__btn--number">9</button>
+			<button id="division" class="button-pad__btn button-pad__btn--secondary">/</button>
+			<button id="4" class="button-pad__btn button-pad__btn--number">4</button>
+			<button id="5" class="button-pad__btn button-pad__btn--number">5</button>
+			<button id="6" class="button-pad__btn button-pad__btn--number">6</button>
+			<button id="times" class="button-pad__btn button-pad__btn--secondary">x</button>
+			<button id="1" class="button-pad__btn button-pad__btn--number">1</button>
+			<button id="2" class="button-pad__btn button-pad__btn--number">2</button>
+			<button id="3" class="button-pad__btn button-pad__btn--number">3</button>
+			<button id="minus" class="button-pad__btn button-pad__btn--secondary">-</button>
+			<button id="dot" class="button-pad__btn">,</button>
+			<button id="0" class="button-pad__btn button-pad__btn--number">0</button>
+			<button id="equal" class="button-pad__btn button-pad__btn--warning">=</button>
+			<button id="plus" class="button-pad__btn button-pad__btn--secondary">+</button>
+		</div>
+	</main>
 </body>
 
 </html>
