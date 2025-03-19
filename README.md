@@ -1,4 +1,4 @@
-![calculadora](./img/calculadora.png)
+![calculadora](./dist/img/calculadora.png)
 
 # Calculadora HMTL-CSS-JS
 
